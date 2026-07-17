@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>月台小卡｜夜间抽卡</title>
+    <meta
+      name="description"
+      content="一个轻轻松松的夜间抽卡小网页：先看规则，再抽几张卡，把话题交给晚风。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header" aria-label="页面导航">
+        <a class="brand" href="#top" aria-label="月台小卡首页">
+          <span class="brand-mark">✦</span>
+          <span>月台小卡</span>
+        </a>
+        <nav class="nav-links" aria-label="主要导航">
+          <a href="#flow">玩法</a>
+          <a href="#play">抽卡</a>
+          <a href="#cards">题库</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero section-grid" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">给晚一点的两个人</p>
+            <h1 id="hero-title">把晚风分成几张纸牌。</h1>
+            <p class="hero-intro">
+              先看一眼规则，再抽四张卡。认真答也好，乱讲也好；
+              只要把话递出去，夜晚就会慢慢亮起来。
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#flow">先看规则</a>
+              <a class="button ghost" href="#play">直接抽卡</a>
+            </div>
+            <ul class="trust-points" aria-label="页面特点">
+              <li>轻一点</li>
+              <li>短一点</li>
+              <li>随时可换</li>
+            </ul>
+          </div>
+
+          <aside class="phone-preview" aria-label="抽卡界面预览">
+            <div class="phone-glow"></div>
+            <div class="phone-card">
+              <div class="phone-status">
+                <span id="liveTime">--:--</span>
+                <span>夜风在线</span>
+              </div>
+              <div class="mini-room">
+                <div class="moon" aria-hidden="true"></div>
+                <div class="stars" aria-hidden="true">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+                <div class="avatars" aria-label="两个人的小房间">
+                  <span class="avatar cat">我</span>
+                  <span class="avatar rabbit">你</span>
+                </div>
+              </div>
+              <div class="preview-question">
+                <span class="pill">今晚一问</span>
+                <p>今晚的风如果有味道，会像什么？</p>
+              </div>
+              <div class="choice-row">
+                <span>橘子皮</span>
+                <span>热茶</span>
+                <span>雨后路灯</span>
+              </div>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section modes" aria-labelledby="modes-title">
+          <div class="section-heading">
+            <p class="eyebrow">三种打开方式</p>
+            <h2 id="modes-title">把问题放轻，答案会自己走出来。</h2>
+          </div>
+          <div class="mode-grid">
+            <article class="mode-card">
+              <span class="mode-icon">☁</span>
+              <h3>短问</h3>
+              <p>像递过去一张小纸条，不催人立刻认真，只留一个好接的口子。</p>
+            </article>
+            <article class="mode-card">
+              <span class="mode-icon">✦</span>
+              <h3>同频</h3>
+              <p>两个人各自选一个答案，偶尔撞上，偶尔错开，都有话可说。</p>
+            </article>
+            <article class="mode-card">
+              <span class="mode-icon">♪</span>
+              <h3>小动作</h3>
+              <p>不表演，也不费力；只是取个名字，编个设定，给夜晚添一点声响。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section flow" id="flow" aria-labelledby="flow-title">
+          <div class="section-heading">
+            <p class="eyebrow">玩法</p>
+            <h2 id="flow-title">规则很短，像一张车票。</h2>
+          </div>
+          <div class="flow-line">
+            <article>
+              <span>01</span>
+              <h3>选频道</h3>
+              <p>挑一个气味，或者点“随便乱抽”。</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>抽四张</h3>
+              <p>每张只回答一句。太难接，就换。</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>别用力</h3>
+              <p>认真可以，跑题也可以。别把夜晚聊成作业。</p>
+            </article>
+            <article>
+              <span>04</span>
+              <h3>收一段</h3>
+              <p>最后留下一张小结，当作今晚的折角。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="playground section-grid" id="play" aria-labelledby="play-title">
+          <div class="play-copy">
+            <p class="eyebrow">抽卡</p>
+            <h2 id="play-title">选频道，或随便乱抽。</h2>
+            <p>
+              题库有 180 张。风物、夜宵、怪设定、小观察都会出现；
+              抽到哪张，就顺着哪张往下走。
+            </p>
+            <div class="micro-note">
+              <strong>小提醒：</strong>
+              不好接就换。好接就收下。
+            </div>
+          </div>
+
+          <div class="game-panel" aria-label="抽卡面板">
+            <div class="game-topline">
+              <span class="round-badge" id="roundBadge">第 1 / 4 张</span>
+              <span class="soft-status" id="softStatus">夜风刚起</span>
+            </div>
+
+            <fieldset class="mood-picker">
+              <legend>选一个今晚的频道</legend>
+              <label>
+                <input type="radio" name="mood" value="soda" checked />
+                <span>气泡闲聊</span>
+              </label>
+              <label>
+                <input type="radio" name="mood" value="snack" />
+                <span>夜宵频道</span>
+              </label>
+              <label>
+                <input type="radio" name="mood" value="alien" />
+                <span>外星电波</span>
+              </label>
+              <label>
+                <input type="radio" name="mood" value="couch" />
+                <span>沙发废话</span>
+              </label>
+              <label>
+                <input type="radio" name="mood" value="lucky" />
+                <span>随机小运</span>
+              </label>
+              <label>
+                <input type="radio" name="mood" value="detective" />
+                <span>侦探模式</span>
+              </label>
+              <label>
+                <input type="radio" name="mood" value="random" />
+                <span>随便乱抽</span>
+              </label>
+            </fieldset>
+
+            <article class="question-card" id="questionCard" aria-live="polite">
+              <div class="card-label" id="cardType">风物题</div>
+              <p id="cardText">今晚的风如果有味道，会像什么？</p>
+              <div class="answer-hints" id="answerHints">
+                <span>橘子皮</span>
+                <span>热茶</span>
+                <span>雨后路灯</span>
+              </div>
+            </article>
+
+            <div class="game-actions">
+              <button class="button ghost" type="button" id="drawCard">换一张</button>
+              <button class="button primary" type="button" id="completeCard">收下这张</button>
+            </div>
+
+            <section class="result-card" id="resultCard" aria-live="polite" hidden>
+              <span class="pill">今晚小结</span>
+              <h3 id="resultTitle">气泡闲聊</h3>
+              <p id="resultText">
+                像一罐刚开的气泡水，声音很轻，但泡泡一直往上走。
+              </p>
+              <button class="button ghost" type="button" id="restartGame">再来一局</button>
+            </section>
+          </div>
+        </section>
+
+        <section class="section card-library" id="cards" aria-labelledby="cards-title">
+          <div class="section-heading">
+            <p class="eyebrow">卡片一角</p>
+            <h2 id="cards-title">180 张里，先露出九张。</h2>
+          </div>
+          <div class="library-grid">
+            <article>
+              <span class="pill">风物题</span>
+              <p>今晚的风如果有味道，会像什么？</p>
+            </article>
+            <article>
+              <span class="pill">夜宵题</span>
+              <p>如果现在有一张小桌，你会先摆上什么？</p>
+            </article>
+            <article>
+              <span class="pill">外星题</span>
+              <p>给今晚的地球写一句观测记录。</p>
+            </article>
+            <article>
+              <span class="pill">沙发题</span>
+              <p>如果此刻是一种姿势，会叫什么名字？</p>
+            </article>
+            <article>
+              <span class="pill">小运题</span>
+              <p>给明天派发一件很小很小的好事。</p>
+            </article>
+            <article>
+              <span class="pill">侦探题</span>
+              <p>今晚最可疑的线索藏在哪里？</p>
+            </article>
+            <article>
+              <span class="pill">同频题</span>
+              <p>同时选一个颜色，不解释。</p>
+            </article>
+            <article>
+              <span class="pill">小动作</span>
+              <p>给这一分钟取一个不太正经的名字。</p>
+            </article>
+            <article>
+              <span class="pill">乱抽</span>
+              <p>从所有纸牌里随手摸一张，像翻到一页夜色。</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>月台小卡 · 今晚慢一点。</p>
+        <a href="#top">回到顶部</a>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
